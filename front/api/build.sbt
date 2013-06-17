@@ -1,6 +1,6 @@
 organization := "com.daggerfrog"
 
-name := "daggerfrog"
+name := "daggerfrog-api"
 
 version := "1.0"
 
@@ -13,16 +13,15 @@ resolvers ++= Seq("spray" at "http://repo.spray.io/",
                   )
 
 libraryDependencies ++= Seq(
-  "com.typesafe.akka" % "akka-actor_2.10" % "2.1.2",
-  "com.typesafe.akka" % "akka-slf4j_2.10" % "2.1.2",
+  "com.typesafe.akka" %% "akka-actor" % "2.2.0-RC1",
+  "com.typesafe.akka" %% "akka-slf4j" % "2.2.0-RC1",
   "com.typesafe" % "config" % "1.0.0",
   "ch.qos.logback" % "logback-classic" % "1.0.9",
-  "io.spray" % "spray-routing" % "1.1-M7",
-  "io.spray" % "spray-can" % "1.1-M7",
-  "io.spray" % "spray-http" % "1.1-M7",
-  "io.spray" % "spray-caching" % "1.1-M7",
+  "io.spray" % "spray-routing" % "1.2-M8",
+  "io.spray" % "spray-can" % "1.2-M8",
+  "io.spray" % "spray-http" % "1.2-M8",
+  "io.spray" % "spray-caching" % "1.2-M8",
   "io.spray" % "spray-json_2.10" % "1.2.3",
   "org.apache.thrift" % "libthrift" % "0.9.0",
-  "com.michaelpollmeier" % "gremlin-scala" % "2.3.0",
   "com.tinkerpop.blueprints" % "blueprints-neo4j-graph" % "2.3.0"
   )
