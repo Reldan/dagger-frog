@@ -6,3 +6,4 @@ trait ComponentRegistry
   extends ActorSystemComponent
   with ConfigComponent
   with RestApiComponent
+  with StorageComponent
